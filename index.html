@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora XYZ - Casas con Bono del Estado</title>
+    <meta name="description" content="Construimos tu vivienda con el Bono del Estado Peruano. Empresa formal con años de experiencia.">
+    
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <!-- ============ HEADER / NAVEGACIÓN ============ -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="img/logos/logo-empresa.png" alt="Constructora XYZ" class="h-12">
+                <span class="ml-2 text-xl font-bold text-blue-900">Constructora XYZ</span>
+            </div>
+            
+            <!-- Menú Desktop -->
+            <ul class="hidden md:flex space-x-8 text-gray-700 font-semibold">
+                <li><a href="#inicio" class="hover:text-blue-600 transition">Inicio</a></li>
+                <li><a href="#nosotros" class="hover:text-blue-600 transition">Nosotros</a></li>
+                <li><a href="#servicios" class="hover:text-blue-600 transition">Servicios</a></li>
+                <li><a href="#proyectos" class="hover:text-blue-600 transition">Proyectos</a></li>
+                <li><a href="#faq" class="hover:text-blue-600 transition">FAQ</a></li>
+                <li><a href="#contacto" class="hover:text-blue-600 transition">Contacto</a></li>
+            </ul>
+            
+            <!-- Botón Cotizar -->
+            <a href="#contacto" class="hidden md:block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                <i class="fas fa-calculator mr-2"></i>Cotizar
+            </a>
+            
+            <!-- Menú Hamburguesa (Móvil) -->
+            <button id="menuBtn" class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        
+        <!-- Menú Móvil -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <ul class="flex flex-col p-4 space-y-3 text-gray-700 font-semibold">
+                <li><a href="#inicio" class="block hover:text-blue-600">Inicio</a></li>
+                <li><a href="#nosotros" class="block hover:text-blue-600">Nosotros</a></li>
+                <li><a href="#servicios" class="block hover:text-blue-600">Servicios</a></li>
+                <li><a href="#proyectos" class="block hover:text-blue-600">Proyectos</a></li>
+                <li><a href="#faq" class="block hover:text-blue-600">FAQ</a></li>
+                <li><a href="#contacto" class="block hover:text-blue-600">Contacto</a></li>
+                <li><a href="#contacto" class="block bg-blue-600 text-white text-center px-4 py-2 rounded-lg">Cotizar</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ============ SECCIÓN INICIO (HERO) ============ -->
+    <section id="inicio" class="pt-20 min-h-screen flex items-center bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+        <div class="container mx-auto px-4 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Texto -->
+                <div>
+                    <span class="inline-block bg-yellow-400 text-blue-900 px-4 py-1 rounded-full text-sm font-bold mb-4">
+                        <i class="fas fa-home mr-2"></i>Bono del Estado Peruano
+                    </span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                        Construimos tu <span class="text-yellow-400">casa soñada</span> con el Bono del Estado
+                    </h1>
+                    <p class="text-lg md:text-xl text-blue-100 mb-8">
+                        Más de 200 familias confían en nosotros. Te acompañamos en todo el proceso para que accedas al bono y estrenes tu vivienda.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contacto" class="bg-yellow-400 text-blue-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition text-center">
+                            <i class="fas fa-whatsapp mr-2"></i>Cotiza tu casa ahora
+                        </a>
+                        <a href="#proyectos" class="border-2 border-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition text-center">
+                            <i class="fas fa-images mr-2"></i>Ver proyectos
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Imagen -->
+                <div class="hidden md:block">
+                    <img src="img/hero-bg.jpg" alt="Casa moderna construida por Constructora XYZ" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 text-center">
+                <div>
+                    <p class="text-4xl font-extrabold text-yellow-400">10+</p>
+                    <p class="text-blue-200">Años de experiencia</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-extrabold text-yellow-400">200+</p>
+                    <p class="text-blue-200">Viviendas entregadas</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-extrabold text-yellow-400">98%</p>
+                    <p class="text-blue-200">Clientes satisfechos</p>
+                </div>
+                <div>
+                    <p class="text-4xl font-extrabold text-yellow-400">15</p>
+                    <p class="text-blue-200">Distritos atendidos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SECCIÓN NOSOTROS ============ -->
+    <section id="nosotros" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold uppercase tracking-wider">Sobre nosotros</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">Conoce a tu constructora de confianza</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="img/equipo/equipo-constructora.jpg" alt="Equipo de Constructora XYZ" class="rounded-lg shadow-xl">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Construyendo el futuro de las familias peruanas</h3>
+                    <p class="text-gray-600 mb-4">
+                        Somos una empresa peruana con más de 10 años de experiencia en el sector construcción, especializada en viviendas sociales a través del Bono del Estado.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        Nuestro compromiso es brindar viviendas de calidad, seguras y accesibles, acompañando a cada familia en todo el proceso de postulación y construcción.
+                    </p>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-600 text-xl mr-3"></i>
+                            <span class="text-gray-700">Registro en el Ministerio de Vivienda</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-600 text-xl mr-3"></i>
+                            <span class="text-gray-700">Equipo profesional de ingenieros y arquitectos</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-blue-600 text-xl mr-3"></i>
+                            <span class="text-gray-700">Garantía y post-venta en todas nuestras obras</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SECCIÓN SERVICIOS ============ -->
+    <section id="servicios" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold uppercase tracking-wider">Qué ofrecemos</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">Nuestros servicios</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Servicio 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-file-signature text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Asesoría para el Bono</h3>
+                    <p class="text-gray-600">Te guiamos en todo el proceso de postulación al Bono del Estado, revisamos tu documentación y te asesoramos paso a paso.</p>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-hard-hat text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Construcción integral</h3>
+                    <p class="text-gray-600">Realizamos la construcción completa de tu vivienda con materiales de primera calidad, en los plazos acordados y con total transparencia.</p>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-drafting-compass text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Diseño y planificación</h3>
+                    <p class="text-gray-600">Nuestros arquitectos diseñan la casa de tus sueños, optimizando espacios y recursos para que aproveches al máximo tu bono.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SECCIÓN PROYECTOS ============ -->
+    <section id="proyectos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold uppercase tracking-wider">Nuestro trabajo</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">Proyectos entregados</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Conoce algunos de los proyectos que hemos realizado para familias como la tuya</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Proyecto 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative overflow-hidden">
+                        <img src="img/proyectos/casa1.jpg" alt="Casa en Villa El Salvador" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <p class="text-white font-bold">Villa El Salvador</p>
+                            <p class="text-gray-300 text-sm">Casa de 65m² con 3 dormitorios</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative overflow-hidden">
+                        <img src="img/proyectos/casa2.jpg" alt="Casa en San Juan de Lurigancho" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <p class="text-white font-bold">San Juan de Lurigancho</p>
+                            <p class="text-gray-300 text-sm">Casa de 70m² con 3 dormitorios</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyecto 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group">
+                    <div class="relative overflow-hidden">
+                        <img src="img/proyectos/casa3.jpg" alt="Casa en Comas" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <p class="text-white font-bold">Comas</p>
+                            <p class="text-gray-300 text-sm">Casa de 80m² con 4 dormitorios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SECCIÓN FAQ (BONO ESTATAL) ============ -->
+    <section id="faq" class="py-20">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold uppercase tracking-wider">Resolvemos tus dudas</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">Preguntas frecuentes sobre el Bono</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            
+            <!-- FAQ 1 -->
+            <div class="border-b border-gray-200 py-4">
+                <button class="faq-btn w-full text-left flex justify-between items-center text-lg font-semibold text-gray-800 hover:text-blue-600 transition">
+                    <span>¿Qué es el Bono del Estado Peruano?</span>
+                    <i class="fas fa-chevron-down text-blue-600"></i>
+                </button>
+                <div class="faq-content hidden mt-2 text-gray-600">
+                    <p>Es un subsidio que otorga el Estado a familias de bajos recursos para la compra o construcción de una vivienda. Nosotros te ayudamos a gestionarlo.</p>
+                </div>
+            </div>
+            
+            <!-- FAQ 2 -->
+            <div class="border-b border-gray-200 py-4">
+                <button class="faq-btn w-full text-left flex justify-between items-center text-lg font-semibold text-gray-800 hover:text-blue-600 transition">
+                    <span>¿Cuáles son los requisitos para acceder?</span>
+                    <i class="fas fa-chevron-down text-blue-600"></i>
+                </button>
+                <div class="faq-content hidden mt-2 text-gray-600">
+                    <ul class="list-disc pl-6 space-y-1">
+                        <li>Ser peruano mayor de 18 años</li>
+                        <li>No tener vivienda propia</li>
+                        <li>Ingresos familiares menores a S/ 3,500</li>
+                        <li>No haber recibido otro bono del Estado</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- FAQ 3 -->
+            <div class="border-b border-gray-200 py-4">
+                <button class="faq-btn w-full text-left flex justify-between items-center text-lg font-semibold text-gray-800 hover:text-blue-600 transition">
+                    <span>¿Cuánto tiempo demora el proceso?</span>
+                    <i class="fas fa-chevron-down text-blue-600"></i>
+                </button>
+                <div class="faq-content hidden mt-2 text-gray-600">
+                    <p>El proceso completo (postulación, aprobación y construcción) puede tomar entre 3 a 6 meses, dependiendo de la disponibilidad del bono y la ubicación.</p>
+                </div>
+            </div>
+            
+            <!-- FAQ 4 -->
+            <div class="border-b border-gray-200 py-4">
+                <button class="faq-btn w-full text-left flex justify-between items-center text-lg font-semibold text-gray-800 hover:text-blue-600 transition">
+                    <span>¿La empresa se encarga de todo el trámite?</span>
+                    <i class="fas fa-chevron-down text-blue-600"></i>
+                </button>
+                <div class="faq-content hidden mt-2 text-gray-600">
+                    <p>Sí, nosotros te acompañamos en cada paso: desde la asesoría inicial, la revisión de documentos, la postulación, hasta la entrega de tu vivienda construida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SECCIÓN CONTACTO ============ -->
+    <section id="contacto" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="text-blue-600 font-bold uppercase tracking-wider">Contáctanos</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">¿Listo para tu casa nueva?</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Déjanos tus datos y un asesor te contactará para guiarte en el proceso del Bono del Estado</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Formulario -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-semibold mb-2">Nombre completo</label>
+                            <input type="text" id="nombre" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Ej: Juan Pérez" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-semibold mb-2">Teléfono / WhatsApp</label>
+                            <input type="tel" id="telefono" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Ej: 987654321" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-semibold mb-2">Correo electrónico</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Ej: juan@email.com" required>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-semibold mb-2">Distrito donde quieres construir</label>
+                            <select id="distrito" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                <option value="">Selecciona un distrito</option>
+                                <option value="villa-el-salvador">Villa El Salvador</option>
+                                <option value="san-juan-de-lurigancho">San Juan de Lurigancho</option>
+                                <option value="comas">Comas</option>
+                                <option value="san-martin-de-porres">San Martín de Porres</option>
+                                <option value="otros">Otro distrito</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label class="block text-gray-700 font-semibold mb-2">Mensaje</label>
+                            <textarea id="mensaje" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="Cuéntanos más sobre tu proyecto..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 transition">
+                            <i class="fas fa-paper-plane mr-2"></i>Enviar mensaje
+                        </button>
+                    </form>
+                    <div id="formMessage" class="mt-4 text-center hidden"></div>
+                </div>
+                
+                <!-- Información de contacto -->
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4"><i class="fas fa-phone text-blue-600 mr-2"></i>Contáctanos</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl w-8 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Oficina principal</p>
+                                    <p class="text-gray-600">Av. Ejemplo 123, Lima, Perú</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-blue-600 text-xl w-8 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Teléfono</p>
+                                    <p class="text-gray-600">(01) 234-5678</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fab fa-whatsapp text-blue-600 text-xl w-8 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">WhatsApp</p>
+                                    <p class="text-gray-600">+51 987 654 321</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-blue-600 text-xl w-8 mt-1"></i>
+                                <div>
+                                    <p class="font-semibold">Correo</p>
+                                    <p class="text-gray-600">info@constructora-xyz.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- WhatsApp flotante -->
+                    <a href="https://wa.me/51987654321?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Bono%20del%20Estado" target="_blank" class="block bg-green-500 text-white p-6 rounded-xl shadow-lg hover:bg-green-600 transition text-center">
+                        <i class="fab fa-whatsapp text-3xl mr-3"></i>
+                        <span class="font-bold text-lg">Escríbenos por WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Columna 1 -->
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="img/logos/logo-empresa.png" alt="Constructora XYZ" class="h-10">
+                        <span class="ml-2 text-xl font-bold">Constructora XYZ</span>
+                    </div>
+                    <p class="text-gray-400">Construyendo hogares para las familias peruanas con el Bono del Estado.</p>
+                </div>
+                
+                <!-- Columna 2 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Enlaces</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#inicio" class="hover:text-white transition">Inicio</a></li>
+                        <li><a href="#nosotros" class="hover:text-white transition">Nosotros</a></li>
+                        <li><a href="#servicios" class="hover:text-white transition">Servicios</a></li>
+                        <li><a href="#proyectos" class="hover:text-white transition">Proyectos</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Términos y condiciones</a></li>
+                        <li><a href="#" class="hover:text-white transition">Política de privacidad</a></li>
+                        <li><a href="#" class="hover:text-white transition">Libro de reclamaciones</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 4 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl transition"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl transition"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white text-2xl transition"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                © 2026 Constructora XYZ. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ WHATSAPP FLOTANTE ============ -->
+    <a href="https://wa.me/51987654321?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Bono%20del%20Estado" target="_blank" class="btn-whatsapp-flotante">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ============ SCRIPTS ============ -->
+    <script src="js/script.js"></script>
+</body>
+</html>
