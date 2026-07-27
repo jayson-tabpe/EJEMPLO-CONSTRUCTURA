@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#dbeafe"/>
+  <rect x="120" y="100" width="160" height="120" fill="#fbbf24" rx="6"/>
+  <polygon points="200,60 100,130 300,130" fill="#fbbf24"/>
+  <rect x="175" y="150" width="50" height="70" fill="#1e3a8a"/>
+  <rect x="135" y="115" width="35" height="25" fill="#1e3a8a"/>
+  <rect x="230" y="115" width="35" height="25" fill="#1e3a8a"/>
+  <text x="200" y="260" font-family="Arial" font-size="14" fill="#1e3a8a" text-anchor="middle" font-weight="bold">Villa El Salvador</text>
+</svg>

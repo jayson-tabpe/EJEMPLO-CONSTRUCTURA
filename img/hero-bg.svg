@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#1e3a8a"/>
+  <rect x="300" y="200" width="200" height="150" fill="#fbbf24" rx="8"/>
+  <polygon points="400,150 280,250 520,250" fill="#fbbf24"/>
+  <rect x="370" y="280" width="60" height="70" fill="#1e3a8a"/>
+  <rect x="320" y="220" width="40" height="30" fill="#1e3a8a"/>
+  <rect x="440" y="220" width="40" height="30" fill="#1e3a8a"/>
+  <text x="400" y="420" font-family="Arial" font-size="18" fill="white" text-anchor="middle">Tu casa soñada</text>
+</svg>

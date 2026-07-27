@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#dbeafe"/>
+  <rect x="80" y="100" width="240" height="130" fill="#fbbf24" rx="6"/>
+  <polygon points="200,60 60,140 340,140" fill="#fbbf24"/>
+  <rect x="175" y="150" width="50" height="80" fill="#1e3a8a"/>
+  <rect x="100" y="115" width="40" height="30" fill="#1e3a8a"/>
+  <rect x="260" y="115" width="40" height="30" fill="#1e3a8a"/>
+  <rect x="155" y="115" width="35" height="25" fill="#1e3a8a"/>
+  <text x="200" y="260" font-family="Arial" font-size="14" fill="#1e3a8a" text-anchor="middle" font-weight="bold">Comas</text>
+</svg>

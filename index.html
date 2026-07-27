@@ -25,7 +25,7 @@
         <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
             <!-- Logo -->
             <div class="flex items-center">
-                <img src="img/logos/logo-empresa.png" alt="Constructora XYZ" class="h-12">
+                <img src="img/logos/logo-empresa.svg" alt="Constructora XYZ" class="h-12">
                 <span class="ml-2 text-xl font-bold text-blue-900">Constructora XYZ</span>
             </div>
             
@@ -51,7 +51,7 @@
         </nav>
         
         <!-- Menú Móvil -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+        <div id="mobileMenu" class="md:hidden bg-white border-t">
             <ul class="flex flex-col p-4 space-y-3 text-gray-700 font-semibold">
                 <li><a href="#inicio" class="block hover:text-blue-600">Inicio</a></li>
                 <li><a href="#nosotros" class="block hover:text-blue-600">Nosotros</a></li>
@@ -91,7 +91,7 @@
                 
                 <!-- Imagen -->
                 <div class="hidden md:block">
-                    <img src="img/hero-bg.jpg" alt="Casa moderna construida por Constructora XYZ" class="rounded-lg shadow-2xl">
+                    <img src="img/hero-bg.svg" alt="Casa moderna construida por Constructora XYZ" class="rounded-lg shadow-2xl">
                 </div>
             </div>
             
@@ -128,7 +128,7 @@
             
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <img src="img/equipo/equipo-constructora.jpg" alt="Equipo de Constructora XYZ" class="rounded-lg shadow-xl">
+                    <img src="img/equipo/equipo-constructora.svg" alt="Equipo de Constructora XYZ" class="rounded-lg shadow-xl">
                 </div>
                 <div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-4">Construyendo el futuro de las familias peruanas</h3>
@@ -212,7 +212,7 @@
                 <!-- Proyecto 1 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group">
                     <div class="relative overflow-hidden">
-                        <img src="img/proyectos/casa1.jpg" alt="Casa en Villa El Salvador" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                        <img src="img/proyectos/casa1.svg" alt="Casa en Villa El Salvador" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
                             <p class="text-white font-bold">Villa El Salvador</p>
                             <p class="text-gray-300 text-sm">Casa de 65m² con 3 dormitorios</p>
@@ -223,7 +223,7 @@
                 <!-- Proyecto 2 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group">
                     <div class="relative overflow-hidden">
-                        <img src="img/proyectos/casa2.jpg" alt="Casa en San Juan de Lurigancho" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                        <img src="img/proyectos/casa2.svg" alt="Casa en San Juan de Lurigancho" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
                             <p class="text-white font-bold">San Juan de Lurigancho</p>
                             <p class="text-gray-300 text-sm">Casa de 70m² con 3 dormitorios</p>
@@ -234,7 +234,7 @@
                 <!-- Proyecto 3 -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition group">
                     <div class="relative overflow-hidden">
-                        <img src="img/proyectos/casa3.jpg" alt="Casa en Comas" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
+                        <img src="img/proyectos/casa3.svg" alt="Casa en Comas" class="w-full h-64 object-cover group-hover:scale-105 transition duration-300">
                         <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
                             <p class="text-white font-bold">Comas</p>
                             <p class="text-gray-300 text-sm">Casa de 80m² con 4 dormitorios</p>
@@ -256,22 +256,22 @@
             
             <!-- FAQ 1 -->
             <div class="border-b border-gray-200 py-4">
-                <button class="faq-btn w-full text-left flex justify-between items-center text-lg font-semibold text-gray-800 hover:text-blue-600 transition">
+                <button class="faq-btn w-full text-left flex justify-between items-center text-lg font-semibold text-gray-800 hover:text-blue-600 transition" aria-expanded="false" aria-controls="faq1">
                     <span>¿Qué es el Bono del Estado Peruano?</span>
                     <i class="fas fa-chevron-down text-blue-600"></i>
                 </button>
-                <div class="faq-content hidden mt-2 text-gray-600">
+                <div id="faq1" class="faq-content hidden mt-2 text-gray-600" role="region">
                     <p>Es un subsidio que otorga el Estado a familias de bajos recursos para la compra o construcción de una vivienda. Nosotros te ayudamos a gestionarlo.</p>
                 </div>
             </div>
             
             <!-- FAQ 2 -->
             <div class="border-b border-gray-200 py-4">
-                <button class="faq-btn w-full text-left flex justify-between items-center text-lg font-semibold text-gray-800 hover:text-blue-600 transition">
+                <button class="faq-btn w-full text-left flex justify-between items-center text-lg font-semibold text-gray-800 hover:text-blue-600 transition" aria-expanded="false" aria-controls="faq2">
                     <span>¿Cuáles son los requisitos para acceder?</span>
                     <i class="fas fa-chevron-down text-blue-600"></i>
                 </button>
-                <div class="faq-content hidden mt-2 text-gray-600">
+                <div id="faq2" class="faq-content hidden mt-2 text-gray-600" role="region">
                     <ul class="list-disc pl-6 space-y-1">
                         <li>Ser peruano mayor de 18 años</li>
                         <li>No tener vivienda propia</li>
@@ -283,22 +283,22 @@
             
             <!-- FAQ 3 -->
             <div class="border-b border-gray-200 py-4">
-                <button class="faq-btn w-full text-left flex justify-between items-center text-lg font-semibold text-gray-800 hover:text-blue-600 transition">
+                <button class="faq-btn w-full text-left flex justify-between items-center text-lg font-semibold text-gray-800 hover:text-blue-600 transition" aria-expanded="false" aria-controls="faq3">
                     <span>¿Cuánto tiempo demora el proceso?</span>
                     <i class="fas fa-chevron-down text-blue-600"></i>
                 </button>
-                <div class="faq-content hidden mt-2 text-gray-600">
+                <div id="faq3" class="faq-content hidden mt-2 text-gray-600" role="region">
                     <p>El proceso completo (postulación, aprobación y construcción) puede tomar entre 3 a 6 meses, dependiendo de la disponibilidad del bono y la ubicación.</p>
                 </div>
             </div>
             
             <!-- FAQ 4 -->
             <div class="border-b border-gray-200 py-4">
-                <button class="faq-btn w-full text-left flex justify-between items-center text-lg font-semibold text-gray-800 hover:text-blue-600 transition">
+                <button class="faq-btn w-full text-left flex justify-between items-center text-lg font-semibold text-gray-800 hover:text-blue-600 transition" aria-expanded="false" aria-controls="faq4">
                     <span>¿La empresa se encarga de todo el trámite?</span>
                     <i class="fas fa-chevron-down text-blue-600"></i>
                 </button>
-                <div class="faq-content hidden mt-2 text-gray-600">
+                <div id="faq4" class="faq-content hidden mt-2 text-gray-600" role="region">
                     <p>Sí, nosotros te acompañamos en cada paso: desde la asesoría inicial, la revisión de documentos, la postulación, hasta la entrega de tu vivienda construida.</p>
                 </div>
             </div>
@@ -411,7 +411,7 @@
                 <!-- Columna 1 -->
                 <div>
                     <div class="flex items-center mb-4">
-                        <img src="img/logos/logo-empresa.png" alt="Constructora XYZ" class="h-10">
+                        <img src="img/logos/logo-empresa.svg" alt="Constructora XYZ" class="h-10">
                         <span class="ml-2 text-xl font-bold">Constructora XYZ</span>
                     </div>
                     <p class="text-gray-400">Construyendo hogares para las familias peruanas con el Bono del Estado.</p>

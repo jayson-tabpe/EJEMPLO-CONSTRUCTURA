@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#dbeafe"/>
+  <rect x="100" y="110" width="200" height="110" fill="#fbbf24" rx="6"/>
+  <polygon points="200,70 80,140 320,140" fill="#fbbf24"/>
+  <rect x="165" y="155" width="70" height="65" fill="#1e3a8a"/>
+  <rect x="115" y="125" width="40" height="30" fill="#1e3a8a"/>
+  <rect x="245" y="125" width="40" height="30" fill="#1e3a8a"/>
+  <text x="200" y="260" font-family="Arial" font-size="14" fill="#1e3a8a" text-anchor="middle" font-weight="bold">San Juan de Lurigancho</text>
+</svg>
