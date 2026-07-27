@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Constructora XYZ - Casas con Bono del Estado</title>
-    <meta name="description" content="Construimos tu vivienda con el Bono del Estado Peruano. Empresa formal con años de experiencia.">
+    <title>Constructora XYZ - Casas con Bono del Estado Peruano</title>
+    <meta name="description" content="Constructora especializada en viviendas sociales con el Bono del Estado Peruano. Asesoría gratuita, construcción integral y garantía. +10 años de experiencia.">
+    <meta name="keywords" content="constructora, bono del estado, vivienda social, peru, lima, construccion">
+    <meta name="author" content="Constructora XYZ">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://constructora-xyz.com/">
+    <meta property="og:title" content="Constructora XYZ - Casas con Bono del Estado Peruano">
+    <meta property="og:description" content="Construimos tu vivienda con el Bono del Estado Peruano. Asesoría gratuita y construcción integral.">
+    <meta property="og:image" content="img/hero-bg.svg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Constructora XYZ - Casas con Bono del Estado Peruano">
+    <meta name="twitter:description" content="Construimos tu vivienda con el Bono del Estado Peruano. Asesoría gratuita y construcción integral.">
+    <meta name="twitter:image" content="img/hero-bg.svg">
     
     <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -13,10 +32,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="css/estilos.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Constructora XYZ",
+        "description": "Constructora especializada en viviendas sociales con el Bono del Estado Peruano",
+        "url": "https://constructora-xyz.com",
+        "telephone": "+51-1-234-5678",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Av. Ejemplo 123",
+            "addressLocality": "Lima",
+            "addressCountry": "PE"
+        },
+        "openingHours": "Mo-Fr 09:00-18:00"
+    }
+    </script>
 </head>
 <body>
     
@@ -97,21 +137,21 @@
             
             <!-- Stats -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 text-center">
-                <div>
+                <div class="stat-item bg-white bg-opacity-10 rounded-xl p-6">
                     <p class="text-4xl font-extrabold text-yellow-400">10+</p>
-                    <p class="text-blue-200">Años de experiencia</p>
+                    <p class="text-blue-200 mt-1">Años de experiencia</p>
                 </div>
-                <div>
+                <div class="stat-item bg-white bg-opacity-10 rounded-xl p-6">
                     <p class="text-4xl font-extrabold text-yellow-400">200+</p>
-                    <p class="text-blue-200">Viviendas entregadas</p>
+                    <p class="text-blue-200 mt-1">Viviendas entregadas</p>
                 </div>
-                <div>
+                <div class="stat-item bg-white bg-opacity-10 rounded-xl p-6">
                     <p class="text-4xl font-extrabold text-yellow-400">98%</p>
-                    <p class="text-blue-200">Clientes satisfechos</p>
+                    <p class="text-blue-200 mt-1">Clientes satisfechos</p>
                 </div>
-                <div>
+                <div class="stat-item bg-white bg-opacity-10 rounded-xl p-6">
                     <p class="text-4xl font-extrabold text-yellow-400">15</p>
-                    <p class="text-blue-200">Distritos atendidos</p>
+                    <p class="text-blue-200 mt-1">Distritos atendidos</p>
                 </div>
             </div>
         </div>
@@ -123,7 +163,7 @@
             <div class="text-center mb-16">
                 <span class="text-blue-600 font-bold uppercase tracking-wider">Sobre nosotros</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">Conoce a tu constructora de confianza</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+                <div class="divider-blue mx-auto mt-4"></div>
             </div>
             
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -164,7 +204,7 @@
             <div class="text-center mb-16">
                 <span class="text-blue-600 font-bold uppercase tracking-wider">Qué ofrecemos</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">Nuestros servicios</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+                <div class="divider-blue mx-auto mt-4"></div>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
@@ -204,7 +244,7 @@
             <div class="text-center mb-16">
                 <span class="text-blue-600 font-bold uppercase tracking-wider">Nuestro trabajo</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">Proyectos entregados</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+                <div class="divider-blue mx-auto mt-4"></div>
                 <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Conoce algunos de los proyectos que hemos realizado para familias como la tuya</p>
             </div>
             
@@ -251,7 +291,7 @@
             <div class="text-center mb-16">
                 <span class="text-blue-600 font-bold uppercase tracking-wider">Resolvemos tus dudas</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">Preguntas frecuentes sobre el Bono</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+                <div class="divider-blue mx-auto mt-4"></div>
             </div>
             
             <!-- FAQ 1 -->
@@ -311,7 +351,7 @@
             <div class="text-center mb-16">
                 <span class="text-blue-600 font-bold uppercase tracking-wider">Contáctanos</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mt-2">¿Listo para tu casa nueva?</h2>
-                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+                <div class="divider-blue mx-auto mt-4"></div>
                 <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Déjanos tus datos y un asesor te contactará para guiarte en el proceso del Bono del Estado</p>
             </div>
             

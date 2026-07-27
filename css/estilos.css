@@ -11,6 +11,60 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+/* ============ SELECCIÓN DE TEXTO ============ */
+::selection {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* ============ HEADER ============ */
+header {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* ============ BOTÓN COTIZAR PULSE ============ */
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(37, 99, 235, 0);
+    }
+}
+
+header a[href="#contacto"]:not(.hidden) {
+    animation: pulse-glow 2s infinite;
+}
+
+/* ============ HERO ============ */
+#inicio {
+    position: relative;
+    overflow: hidden;
+}
+
+#inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.05)"/></svg>') repeat;
+    background-size: 30px 30px;
+    pointer-events: none;
+}
+
+/* ============ STAT COUNTER ============ */
+.stat-item {
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
 }
 
 /* ============ WHATSAPP FLOTANTE ============ */
@@ -37,6 +91,24 @@ body {
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
 }
 
+@keyframes whatsapp-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.btn-whatsapp-flotante {
+    animation: whatsapp-bounce 2s ease-in-out infinite;
+}
+
+.btn-whatsapp-flotante:hover {
+    animation: none;
+    transform: scale(1.1);
+}
+
 /* ============ ANIMACIONES ============ */
 @keyframes fadeInUp {
     from {
@@ -49,8 +121,48 @@ body {
     }
 }
 
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .animate-fadeInUp {
     animation: fadeInUp 0.8s ease-out;
+}
+
+.animate-fadeInLeft {
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.animate-fadeInRight {
+    animation: fadeInRight 0.8s ease-out;
+}
+
+/* ============ TARJETAS DE SERVICIOS ============ */
+#servicios .bg-white {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#servicios .bg-white:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 /* ============ PROYECTOS - HOVER ============ */
@@ -93,6 +205,50 @@ body {
     padding-bottom: 1rem;
 }
 
+/* ============ FORMULARIO ============ */
+input:focus, select:focus, textarea:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+input, select, textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ============ FOOTER LINKS ============ */
+footer a {
+    position: relative;
+}
+
+footer a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+footer a:hover::after {
+    width: 100%;
+}
+
+/* ============ SECCIONES ============ */
+section {
+    position: relative;
+}
+
+/* ============ DIVIDER DECORATIVO ============ */
+.divider-blue {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    border-radius: 2px;
+}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
     .btn-whatsapp-flotante {
@@ -102,13 +258,10 @@ body {
         bottom: 20px;
         right: 20px;
     }
-}
-
-/* ============ FORMULARIO ============ */
-input:focus, select:focus, textarea:focus {
-    border-color: #2563eb;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    
+    #inicio h1 {
+        font-size: 2.25rem;
+    }
 }
 
 /* ============ SCROLLBAR PERSONALIZADA ============ */
@@ -121,10 +274,21 @@ input:focus, select:focus, textarea:focus {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #2563eb;
+    background: linear-gradient(180deg, #2563eb, #1d4ed8);
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #1d4ed8;
+    background: linear-gradient(180deg, #1d4ed8, #1e40af);
+}
+
+/* ============ PRINT ============ */
+@media print {
+    header, .btn-whatsapp-flotante, footer {
+        display: none;
+    }
+    
+    section {
+        break-inside: avoid;
+    }
 }
